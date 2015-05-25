@@ -1,0 +1,19 @@
+{% extends "notes.html" %}
+
+{% block title %}
+	Repetition, Loops, and Structured Data
+{% endblock %}
+
+{% block lesson %}
+	<p>
+		<em>If statements</em> let us control what part of the code is executed. If the condition is True, the indented block of code will execute. If not the interpreter moves on without executed the block under the if statement. An <em>else statement</em> under an if statement is executed when the if statement was not True.
+	</p>
+	<p>
+		<em>While statements</em> will loop through the indented block of code until the condition is no longer met. Both while and if statements use comparison operators, like greater than or less than, to return the Boolean values True and False.
+	</p>
+	<p>
+		<em>Lists</em> are sequences of data contained in square brackets [ ] and can contain any combination of numbers, strings, or Boolean values. Lists can even contain other lists. <em>For loops</em> allow you to iterate over lists.
+	</p>
+	<pre>for dog in doggy_daycare:
+		dog_food += 1</pre>
+{% endblock %}

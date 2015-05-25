@@ -1,0 +1,26 @@
+{% extends "notes.html" %}
+
+{% block title %}
+	Object Oriented Programming
+{% endblock %}
+
+{% block lesson %}
+	<p>
+		<em>Object Oriented Programming</em> (shortened as OOP) more closely resembles the way the real world operates, which allows programmers to think about programs in a way they are familiar with. OOP allows for less repetition of code, so it is a really valuable tool when thinking about large programming projects.
+	</p>
+	<p>
+		A <em>class</em> is a blueprint or instructions for creating a new kind of object. An <em>object</em> is any <em>instance</em> of a particular class. So a class Cat would have all the instructions for creating a cat object - such as a cat has four legs, fur whiskers, and a tail, and a cat can run and meow. We don't have a cat right now, just the blueprint for a cat. You create an instance of cat by typing cairo = Cat() Now we can set Cairo's attributes, like how he has black fur and meows quietly. We can also create another instance, named Chloe, with white fur and loud meows. With very little code we now have two distinct objects, and could keep creating more and more objects this way reusing the same class code.
+	</p>
+	<p>
+		<em>Instance methods</em> are functions that belong to an instance of a class, typically they are used to set or get information about the particular object they are attached to. <em>Class variables</em> are variables defined within a class or within an instance of the class, like in the above example, kairo.fur_color = black would be an example of a class variable.
+	</p>
+	<p>
+		<em>Inheritance</em> is another concept with classes. Inheritance allows classes to inherit traits from a parent class, like truck and car would both inherit traits from the class vehicle. A truck is a vehicle, and a car is a vehicle, but a truck and a car are different even though they share enough in common to come from the same parent class, such as having wheels and an engine. Inheritance even applies to functions in a class, so sub-classes can have the same functions as the parent. The subclasses can also override the function to do something different, this is called <em>method overriding</em>. This is similar to the cascading part of CSS, where child classes inherit properties from the parent class, but the more specific rules for the child take precedence.
+	</p>
+	<p>
+		Here is a good video about object-oriented programming:
+	</p>
+	<div class="video">
+		<iframe src="https://www.youtube.com/embed/SS-9y0H3Si8" frameborder="0" allowfullscreen></iframe>
+	</div>
+{% endblock %}

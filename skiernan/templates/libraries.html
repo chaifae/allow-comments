@@ -1,0 +1,17 @@
+{% extends "notes.html" %}
+
+{% block title %}
+	Libraries - Using Code Already Written
+{% endblock %}
+
+{% block lesson %}
+	<p>
+		Python comes equipped with the <em>Python Standard Library</em>, a database of useful code already written that programmers can <em>import</em> and use in their programs. These modules are different from the <em>built-in functions</em>, which are available to use without having to import anything. The Standard Library has a lot of files, called <em>modules</em>, that have pre-built functions and classes that we can use in our code. If we type "import some_module" into our code, all of some_module's functions will be able for us to use. However, if we only want to use one thing from a module we can type "from some_module import some_function", this way we are only importing the one some_function we want to use without having to import all of the other stuff in the module.
+	</p>
+	<p>
+		An <em>External Library</em> is a library that someone has written that does not come packaged with Python, such as Twilio. As long as we have the external library downloaded, we can import twilio or certain parts of twilio to use in our code.
+	</p>
+	<p>
+		Because there is so much code available to use, it is important to read the documentation so we can find exactly what we want and really understand what we are using.
+	</p>
+{% endblock %}

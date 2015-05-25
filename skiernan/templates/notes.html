@@ -1,0 +1,46 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+<div class="lesson">
+	<h2>{% block title %}{% endblock %}</h2>
+	<div class="notes">
+		{% block lesson %}
+		{% endblock %}
+		<div class="toplink">
+			<a href="/">Go back home</a>
+		</div>
+	</div>
+</div>
+
+<div class="comments-section">
+	<h2 id="error">Post a Comment</h2>
+	<div class="error-message">
+		{% if error == "1" %}
+		Make sure you have a name!
+		{% elif error == "2" %}
+		Please enter something in the comment box first!
+		{% elif error == "12" %}
+		You can't post an empty comment!
+		{% endif %}
+	</div>
+	<form class="form-submission" action="/{{note}}" method="post">
+		Name: <input type="text" class="form-control" name="author"></br>
+		<textarea class="form-control" name="content"></textarea><br>
+		<input type="submit" class="button" value="Post Your Comment">
+	</form>
+	{% if comments %}
+	{% for comment in comments %}
+	<div class="comment">
+		<div class="comment-author"><em>{{comment.author}} said:</em></div>
+		<div class="comment-content">{{comment.content}}</div>
+	</div>
+	{% endfor %}
+	{% else %}
+	<div class="no-comments">
+		<em>There are no comments yet! Be the first to leave a comment...</em>
+	</div>
+	{% endif %}
+</div>
+
+{% endblock %}

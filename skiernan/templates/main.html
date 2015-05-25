@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Stephanie's Notes</title>
+		<link type"text/css" rel="stylesheet" href="/stylesheets/style.css">
+	</head>
+	<body>
+		<div class="content">
+			<h1 id="top">Stephanie's Intro to Programming Notes</h1>
+			<div class="tablecontents">
+				<a href="/basics">Basics</a> | <a href="/structure">Structure</a> | <a href="/style">Style</a><br>
+				<a href="/tellingcomputers">Programming</a> | <a href="/variables">Variables &amp; Strings</a> | <a href="/functions">Functions</a> | <a href="/repetition">Repetition &amp; Loops</a> | <a href="/problems">Solving Problems</a><br>
+				<a href="/libraries">Libraries</a> | <a href="/oop">Object Oriented Programming</a><br>
+				<a href="/servers">Servers</a> | <a href="/validating">Validating Input</a> | <a href="/templates">HTML Templates</a><br>
+			</div>
+			<div class="headerimg">
+				<img src="/images/html_crop.jpg" alt="This is an image">
+			</div>
+
+			{% block content %}
+			<div class="lesson">
+				<h2>Welcome to my project!</h2>
+				<div class="notes">
+					<p>
+						My name is Stephanie, and this website houses my notes for Udacity's <e>Intro to Programming</em> Nanodegree. The above links direct to the notes for each lesson.
+					</p>
+					<p>
+						The first row corresponds to <b>Stage 1: Make Your Webpage</b>, where we learned some basics of HTML and CSS and put together our first webpage.<br>
+						The second row holds the notes for <b>Stage 2: Automate Your Page</b> where we got our hands dirty with Python and wrote some code to automatically generate HTML.<br>
+						The third row of links is for <b>Stage 3: Program with Objects</b>. In this stage we dove deeper into Python and learned about Object Oriented Programming.<br>
+						The fourth row has notes for <b>Stage 4: Allow Comments</b>. In this stage we worked with Google App Engine and learned about Databases.
+					</p>
+					<p>
+						The box at the bottom of the page holds a variety of links that I found useful throughout the course and continue to reference. HTML and CSS related websites are at the top of the list, while Python references are at the bottom.
+					</p>
+				</div>
+			</div>
+			{% endblock %}
+
+			<div class="resources">
+				<div class="ref">List of resources and important links:</div>
+				<p>
+					<a href="http://validator.w3.org/#validate_by_input">HTML Validation</a> | <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">CSS Validation</a><br>
+					<a href="http://www.w3schools.com/tags/default.asp">HTML Tag List</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Documentation</a> | <a href="http://www.w3schools.com/tags/ref_colorpicker.asp">HTML Color Picker</a><br>
+					<a href="http://codepen.io/pen/">Codepen</a> | <a href="http://scratchpad.io/">Scratchpad</a><br>
+					<a href="https://docs.python.org/2.7/library/index.html">Python Standard Library</a> | <a href="https://pypi.python.org/pypi?:action=browse">External Python Packages</a> | <a href="http://learnpythonthehardway.org/book/">Learn Python the Hard Way</a><br>
+					<a href="http://www.tutorialspoint.com/python/python_exceptions.htm">Python Exceptions Handling</a> | <a href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google Python Style Guide</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

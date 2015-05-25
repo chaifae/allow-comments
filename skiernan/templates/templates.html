@@ -1,0 +1,11 @@
+{% extends "notes.html" %}
+
+{% block title %}
+	Abstraction with HTML Templates
+{% endblock %}
+
+{% block lesson %}
+	<p>
+		<em>Avoiding repetition</em> is a frequent concern in programming, and we've learned several different ways of doing that so far. HTML Templates provide yet another way to avoid repetition. Templates provide a way to quickly build a lot of similar web pages without having to re-write all the same code. You want every page to have the same header and footer? Bam, done piece of cake with templates. Keep the content that stays the same across the site in a main template, and the content that is different in its own templates. For example, for each note page I have, I only have the title and text content in the file, all the rest of the html is kept in a separate file. This allows me to easily make changes for the whole website. If I wanted to change my header picture, I only have to do that in one place now instead of on every single page the header appears on. These easy, sweeping changes allow programmers to work smarter rather than work harder.
+	</p>
+{% endblock %}

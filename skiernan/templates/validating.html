@@ -1,0 +1,14 @@
+{% extends "notes.html" %}
+
+{% block title %}
+	The Importance of Validating Input
+{% endblock %}
+
+{% block lesson %}
+	<p>
+		It is important that we give the user only as much power as we want them to have. We do this by <em>validating the input</em>. One of the main ways to do that is by <em>auto-escaping</em>, so if the user enters in html it will take those characters and convert them, such as turning an open-bracket &#60; into its escaped version, which is &amp;&#35;60&#59;. This means that if someone tries to enter html into my comment section box and submit it, instead of modifying the page it will simply display the comment with the html tag they typed.
+	</p>
+	<p>
+		There are some mischievious people who would like to take advantage of a website's weaknesses for a bit of fun, and there are also some really terrible people that would use a site's weaknesses to fish for user data and sensitive information. Validating input is just one way we keep vicious people from compromising a website.
+	</p>
+{% endblock %}

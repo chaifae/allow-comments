@@ -1,0 +1,14 @@
+{% extends "notes.html" %}
+
+{% block title %}
+	Variables and Strings
+{% endblock %}
+
+{% block lesson %}
+	<p>
+		A <em>variable</em> is a way to give a name to a value so you can easily reference and use that value later. You assign a value to a variable using the equal sign, such as my_age = 23. Variables are useful in storing data and also in referencing that data in a way that makes sense to humans reading the code. Using variables also allows us to easily change the value of something, like days +=1.
+	</p>
+	<p>
+		In Python, 5 is a number (or integer), while "5" is a <em>string</em>. Everything within quotes (either single quotes or double quotes) is a string. Running the code 2 + 3 would give us 5, but the code "2" + "3" gives "23" because it is concatenating (squishing together) the two strings.
+	</p>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "notes.html" %}
+
+{% block title %}
+	Functions
+{% endblock %}
+
+{% block lesson %}
+	<p>
+		Functions take <em>input</em>, do something with the input, and produce <em>output</em>. A function named "add" might take two numbers as input and output the sum of them. Once you create a function, you can reuse it in the code without having to redefine it each time, which helps to avoid repetition.
+	</p>
+	<p>
+		Functions are created by starting a line with def and following with the function name and the parameters/arguments in parenthesis, followed by a colon. The next lines will be the body of the function, and they will be indented.
+	</p>
+	<pre>def add(a, b):
+		return a + b</pre>
+	<p>
+		The return keyword tells Python what the function needs to output. A function without a return statement doesn't do anything that the user can see.
+	</p>
+	<p>
+		To use or call a function you type the name of the function with the arguments/parameters you want to use in parenthesis, like add(2, 3)
+	</p>
+{% endblock %}

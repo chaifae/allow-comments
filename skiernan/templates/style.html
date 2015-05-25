@@ -1,0 +1,17 @@
+{% extends "notes.html" %}
+
+{% block title %}
+	Adding CSS Style to HTML Structure
+{% endblock %}
+
+{% block lesson %}
+	<p>
+		<em>CSS (Cascading Style Sheets)</em> creates the style of a webpage. CSS is a style sheet language used for describing the look and formatting of a document written in a markup language.
+	</p>
+	<p>
+		The <em>Cascading</em> part of CSS means that rules are applied to the elements they directly match as well as that element's child elements, like a waterfall will wet every stone from the top to the bottom. This idea is known as <em>inheritance</em>. If a child element has multiple, overlapping rules defined for it, the more specific rules take precedence.
+	</p>
+	<p>
+		<b>Avoiding repetition</b> is very important in programming. It helps avoid errors when you don't have to rewrite the same thing over and over again - there is always the risk of typos! Avoiding repetition also helps with creating consistency. With CSS, you can apply the same style to everything of the same element, like I have done with all of the div tags with the class "lesson" here. Because of that, it is now very easy for me to make changes to all of the lessons' style at once.
+	</p>
+{% endblock %}

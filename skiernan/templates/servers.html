@@ -1,0 +1,14 @@
+{% extends "notes.html" %}
+
+{% block title %}
+	Understanding Servers
+{% endblock %}
+
+{% block lesson %}
+	<p>
+		A <em>network</em> is a group of entities that can communicate even though they are not all directly connected. <em>Protocol</em> is a set of rules that two entities agree to that determine how they can communicate - HTTP is the protocol for the web. The purpose of a server is to respond to HTTP requests.
+	</p>
+	<p>
+		When you go to a url, such as udacity.com, a request is sent to the server. The server handles that request and sends back a response, which is usually in the form of the webpage for the url. Posting content to a forum is another kind of request. The two main requests are GET and POST. For the GET requests, the parameters are in the url and they are used for fetching documents. There is a maximum length for GET requests, which is the max url length. GET requests are ok to cache, and they should never change information on the server. POST request parameters are in the body of the page, they are used for updating or adding data, and there is no maximum length for a POST request. POSTs are not ok to cache, but it is ok to change information on the server side with them.
+	</p>
+{% endblock %}
